@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gadget Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gadget Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">View Cart</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Your One-Stop Shop for the Latest Gadgets</h2>
+    <p>Discover the newest tech at unbeatable prices.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <!-- Smartphones -->
+      <div class="product-card">
+        <img src="images/apple-iphone-14.jpg" alt="Apple iPhone 14">
+        <h3>Apple iPhone 14</h3>
+        <p>₹79,999</p>
+        <button class="add-to-cart" data-id="1">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/samsung-galaxy-s23.jpg" alt="Samsung Galaxy S23">
+        <h3>Samsung Galaxy S23</h3>
+        <p>₹74,999</p>
+        <button class="add-to-cart" data-id="2">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/redmi-note-13-pro.jpg" alt="Redmi Note 13 Pro">
+        <h3>Redmi Note 13 Pro</h3>
+        <p>₹18,999</p>
+        <button class="add-to-cart" data-id="3">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/realme-narzo-60.jpg" alt="Realme Narzo 60">
+        <h3>Realme Narzo 60</h3>
+        <p>₹16,999</p>
+        <button class="add-to-cart" data-id="4">Add to Cart</button>
+      </div>
+
+      <!-- Laptops -->
+      <div class="product-card">
+        <img src="images/hp-15s.jpg" alt="HP 15s Ryzen 5 Laptop">
+        <h3>HP 15s Ryzen 5 Laptop</h3>
+        <p>₹48,999</p>
+        <button class="add-to-cart" data-id="5">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/lenovo-ideapad-slim-3.jpg" alt="Lenovo IdeaPad Slim 3">
+        <h3>Lenovo IdeaPad Slim 3</h3>
+        <p>₹44,999</p>
+        <button class="add-to-cart" data-id="6">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/dell-inspiron-14.jpg" alt="Dell Inspiron 14">
+        <h3>Dell Inspiron 14</h3>
+        <p>₹54,999</p>
+        <button class="add-to-cart" data-id="7">Add to Cart</button>
+      </div>
+
+      <!-- Wireless Earbuds -->
+      <div class="product-card">
+        <img src="images/boat-airdopes-441.jpg" alt="boAt Airdopes 441">
+        <h3>boAt Airdopes 441</h3>
+        <p>₹2,499</p>
+        <button class="add-to-cart" data-id="8">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/jbl-tune-125tws.jpg" alt="JBL Tune 125TWS">
+        <h3>JBL Tune 125TWS</h3>
+        <p>₹3,499</p>
+        <button class="add-to-cart" data-id="9">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/realme-buds-air-3.jpg" alt="Realme Buds Air 3">
+        <h3>Realme Buds Air 3</h3>
+        <p>₹3,999</p>
+        <button class="add-to-cart" data-id="10">Add to Cart</button>
+      </div>
+
+      <!-- Smartwatches -->
+      <div class="product-card">
+        <img src="images/noise-colorfit-pro-4.jpg" alt="Noise ColorFit Pro 4">
+        <h3>Noise ColorFit Pro 4</h3>
+        <p>₹2,999</p>
+        <button class="add-to-cart" data-id="11">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/amazfit-bip-u-pro.jpg" alt="Amazfit Bip U Pro">
+        <h3>Amazfit Bip U Pro</h3>
+        <p>₹4,999</p>
+        <button class="add-to-cart" data-id="12">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/apple-watch-series-7.jpg" alt="Apple Watch Series 7">
+        <h3>Apple Watch Series 7</h3>
+        <p>₹41,900</p>
+        <button class="add-to-cart" data-id="13">Add to Cart</button>
+      </div>
+
+      <!-- Power Banks -->
+      <div class="product-card">
+        <img src="images/mi-power-bank-3i.jpg" alt="Mi Power Bank 3i 10000mAh">
+        <h3>Mi Power Bank 3i 10000mAh</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="14">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/ambrane-10000mah.jpg" alt="Ambrane 10000mAh Power Bank">
+        <h3>Ambrane 10000mAh Power Bank</h3>
+        <p>₹1,099</p>
+        <button class="add-to-cart" data-id="15">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart" class="cart-modal">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total">
+      <strong>Total: ₹<span id="total-price">0</span></strong>
+    </div>
+    <button id="close-cart">Close Cart</button>
+  </section>
+
+  <section id="about">
+    <h2>About Gadget Hub</h2>
+    <p>Gadget Hub is dedicated to bringing you the latest and greatest in technology. We offer a wide range of electronics to suit all your needs, ensuring quality and affordability.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@gadgethub.in</p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gadget Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
